@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ITS-OD</title>
+  </head>
+  <body>
+    <h1>ITS Objectives Document for JavaScript</h1>
+    <script>
+      document.write("Your browser is supporting JavaScript!");
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <br>
+    <button id="reloadButton">Reload Page</button>
+  
+    <script src="2-3_objects.js" defer>
+      //If the script tag has a scr attribute, the innerHTML is ignored 
+      // by the browser
+      // notice the JS comment symbols.
+      //This inline scripting is preventing the defer to trigger
+      console.log("This is ignored.")
+    </script>
+    <script>
+    console.log("The space between script tags is a javascript space in the html doc.");
+    console.log("This is inline Javascript");</script>
+    <h2> Script Experiment</h2>
+    <script>
+      console.log("Inline JavaScript runs here.");
+    </script>
+    
+    <!-- What happens with this? -->
+    <script>
+      <!-- console.log("Does this run?"); -->
+    </script>
+    
+  </body>
+
+</html>

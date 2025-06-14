@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html onclick="console.log('html clicked')">
+  <head>
+    <title>98-382</title>
+  </head>
+  <body onclick="console.log('body clicked')" id="body">
+    <h1>98-382 Exam Questions</h1>
+    <!--CertiLibrary #11 -->
+    <div id="board"></div>
+    <br /><br />
+
+    <!--CertKillers #1 -->
+    <input
+      id="changer"
+      type="button"
+      onclick="notify();"
+      onmouseover="showRed();"
+      onMouseout="showBlue();"
+      value="Click Me"
+      style="background-color: blue; color: white"
+    />
+    <br /><br />
+
+    <!-- CertKillers #2 -->
+    <input id="url" type="input" />
+
+    <!-- CertKillers #3 -->
+    
+    <p id="tester" onclick="changeText()">Click to change the content.</p>
+    <input type="button" value="Change Text" onclick="changeText()" onclick="console.log('button clicked');"/>
+  
+    <br /><br />
+    <br /><br />
+    
+    <!-- CertKillers #4-->
+     <p><u>Animals</u></p>
+     <ul>
+      <li>Dog</li>
+      <li><b>Cat</b></li>
+      <li>Lion</li>
+     </ul>
+     <p>Click the button to display the animals. </p>
+     <button onclick="showlist()">Show List</button>
+     <div id="list"></div>
+    <br /><br />
+
+    <!-- Sample Questions #3-->
+    <p id="para"><br></p>
+
+    <!-- RAJNISH #5 -->
+     <form name = "orderForm" action = "#" method = "post">
+      <select name = "heatIndex" required>
+        <option>Mild</option>
+        <option>Medium</option>
+        <option>Spicy</option>
+      </select>
+      <button onclick="checkWarning()">Order</button>
+     </form>
+     <br /><br />
+    
+    <!-- KillExam #1  -->
+     <p>A JavaScript Calculator</p>
+     <form id = "calculator">
+      <input type = "text" id = "a"/>
+      <input type = "text" id = "b"/>
+      <input type = "text" id = "result"/>
+      <input type = "button" onclick = "add()" value = "+"/>
+      
+     </form>
+
+
+    <!-- Chloe #1  -->
+    <p id="userText">When in the course of human events...</p>
+    <input type="text" id="tester2">
+    <button onclick="validate()">Validate</button>
+
+
+
+    <!--    -->
+    <!-- IGNORE BELOW -->
+    <div id="myDiv" onclick="console.log('myDiv clicked')">
+    <button onclick="console.log('button 1 clicked');">myDiv</button>
+  </div>
+  <div id="yourDiv"onclick="console.log('yourDiv clicked'); event.stopPropagation();">
+    <button onclick="console.log('button 2 clicked');">yourDiv</button>
+</div>
+      <script src="98-382.js"></script>
+    </p>
+  </body>
+</html>
